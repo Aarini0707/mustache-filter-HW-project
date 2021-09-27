@@ -1,0 +1,24 @@
+body{
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    font-size: 25px;
+}
+
+.btn-info:hover{
+background-color:#a784e3;
+}
+
+canvas{
+    border: 1px solid rgb(55, 9, 87);
+    animation-name: balloon;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mustache{
+    from{box-shadow: 1px 1px 40px red;}
+    to{box-shadow: 1px 1px 40px purple;}
+}

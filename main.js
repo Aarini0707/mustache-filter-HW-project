@@ -17,7 +17,7 @@ function setup(){
 
 function draw(){
     image(video,0,0,300,300); //It uploads the camera inside the canvas
-    image(clown_nose,noseX,noseY,30,30);
+    image(mustache,noseX,noseY,30,30);
 }
 
 function take_snapshot(){
@@ -32,7 +32,7 @@ function gotPoses(results){
     if(results.length>0){ //If the array(results) holds a value greater than 0
         console.log(results); //It prints the array in the console
         noseX=results[0].pose.nose.x-15;
-        noseY=results[0].pose.nose.y-15;
+        noseY=results[0].pose.nose.y-5;
         console.log("nose x= "+noseX); //It fetches x position of the nose and prints it in the console
         console.log("nose y= "+noseY); //It fetches y position of the nose and prints it in the console
     }
